@@ -1,6 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
-// import 'qa-react/node_modules/bootstrap/dist/css/min/bootstrap.min.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 // Import my components
 import Cat from './components/Cat';
@@ -18,8 +18,8 @@ const App = () => {
     // <div>, <main> or another parent 
     // element but there must only be ONE parent
     <>
-      <Hello name="Peta" />
-      <Cat name="Cindy Clawford" colour="Grey" age="12" />
+      {/* <Hello name="Peta" /> */}
+      {/* <Cat name="Cindy Clawford" colour="Grey" age="12" /> */}
       <BasicForm />
       <br />
       <Counter />
