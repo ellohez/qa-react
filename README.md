@@ -72,3 +72,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 ### `Error message "error:0308010C:digital envelope routines::unsupported"`
 #### `- Enable legacy OpenSSL provider.`
 export NODE_OPTIONS=--openssl-legacy-provider
+[StackOverflow page](https://stackoverflow.com/questions/69692842/error-message-error0308010cdigital-envelope-routinesunsupported)
+
