@@ -1,5 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/min/bootstrap.min.css'
+// Import my components
 import Cat from './components/Cat';
 import Hello from './components/Hello';
 
