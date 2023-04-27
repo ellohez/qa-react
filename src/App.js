@@ -1,9 +1,14 @@
 // import logo from './logo.svg';
 import './App.css';
-import 'bootstrap/dist/css/min/bootstrap.min.css'
+// import 'qa-react/node_modules/bootstrap/dist/css/min/bootstrap.min.css';
+
 // Import my components
 import Cat from './components/Cat';
 import Hello from './components/Hello';
+import BasicForm from './components/BasicForm';
+import Counter from './components/Counter';
+import Converter from './components/Converter';
+import React from 'react';
 
 // Component - function that must start with a Captial letter. 
 // Although doesn't have to use strict PascalCase.
@@ -14,7 +19,12 @@ const App = () => {
     // element but there must only be ONE parent
     <>
       <Hello name="Peta" />
-      <Cat name="Cindy Clawford" colour="Grey" age="12"/>
+      <Cat name="Cindy Clawford" colour="Grey" age="12" />
+      <BasicForm />
+      <br />
+      <Counter />
+      <br />
+      <Converter />  
     </>
   );
 }

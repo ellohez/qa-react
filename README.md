@@ -68,3 +68,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### `Error message "error:0308010C:digital envelope routines::unsupported"`
+#### `- Enable legacy OpenSSL provider.`
+export NODE_OPTIONS=--openssl-legacy-provider
