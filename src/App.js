@@ -1,24 +1,19 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import Cat from './components/Cat';
+import Hello from './components/Hello';
 
-function App() {
+// Component - function that must start with a Captial letter. 
+// Although doesn't have to use strict PascalCase.
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // Can wrap all HTML in empty tags (React fragment) <>, 
+    // <div>, <main> or another parent 
+    // element but there must only be ONE parent
+    <>
+      <Hello name="Peta" />
+      <Cat name="Cindy Clawford" colour="Grey" age="12"/>
+    </>
   );
 }
 
