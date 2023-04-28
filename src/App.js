@@ -10,6 +10,7 @@ import Counter from './components/Counter';
 import Converter from './components/Converter';
 import React from 'react';
 import Trainers from './components/Trainers';
+import ProductTable from './components/ProductTable';
 
 // Component - function that must start with a Captial letter. 
 // Although doesn't have to use strict PascalCase.
@@ -21,6 +22,12 @@ const App = () => {
     <>
       <div className='app-header'>
         <p></p>
+      </div>   
+      <div className="flex-container">
+        <ProductTable/>
+      </div>
+      <div className="flex-container">
+        <Counter />
       </div>
       <div className='flex-container'>
         {
@@ -40,9 +47,6 @@ const App = () => {
             <Cat name="Cindy Clawford" colour="Grey" age="12" />
             <br />
           </div> */}
-      </div>
-      <div className="flex-container">
-        <Counter />
       </div>
     </>
   );

@@ -1,5 +1,5 @@
 [
-    {"name": "Bookcase", "desc": "Distressed blue", "count": 12}, 
-    {"name": "Table", "desc": "Round", "count": 32},
-    {"name": "Bedside Cabinet", "desc": "Pine", "count": 5}
+    {"title": "Bookcase", "desc": "Distressed blue", "count": 12, "id": 1}, 
+    {"title": "Table", "desc": "Round", "count": 32, "id": 2},
+    {"title": "Bedside Cabinet", "desc": "Pine", "count": 5, "id": 3}
 ]
