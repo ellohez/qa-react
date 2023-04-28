@@ -17,16 +17,25 @@ const App = () => {
     // Can wrap all HTML in empty tags (React fragment) <>, 
     // <div>, <main> or another parent 
     // element but there must only be ONE parent
-    <>
-      <BasicForm />
-      <br />
-      <Counter />
-      <br />
-      <Converter />
-      <br />  
-      <Hello name="Peta" />
-      <Cat name="Cindy Clawford" colour="Grey" age="12" />
-    </>
+    <div className='flex-container'>
+      {/* <div className="flex-item"> 
+        <br />
+          <BasicForm />
+        </div> */}
+        {/* <div className="flex-item">  */}
+          <Counter />
+        {/* </div> */}
+        {/* <div className="row"> 
+          <Converter />
+        </div> */}
+        {/* <div className="row">  
+          <Hello name="Peta" />
+        </div>
+        <div className="row"> 
+          <Cat name="Cindy Clawford" colour="Grey" age="12" />
+          <br />
+        </div> */}
+    </div>
   );
 }
 
