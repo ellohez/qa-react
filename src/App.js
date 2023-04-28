@@ -19,6 +19,9 @@ const App = () => {
     // <div>, <main> or another parent 
     // element but there must only be ONE parent
     <>
+      <div className='app-header'>
+        <p></p>
+      </div>
       <div className='flex-container'>
         {
           <Trainers/>

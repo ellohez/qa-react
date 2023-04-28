@@ -8,8 +8,10 @@ import React from 'react';
 //  see Hello.jsx or destruct as below
 const Trainer = ({name, age}) => (
     <div className="row">
-        <p>Name: {name}</p>
-        <p>Age: {age}</p>
+        <div className="flex-column ">
+            <p>Name: {name}</p>
+            <p>Age: {age}</p>
+        </div>
     </div>
 );
 

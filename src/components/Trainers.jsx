@@ -10,8 +10,8 @@ const Trainers = () => {
     return (
         <>
             {
-                trainers.map(({name, age, id}) => <Trainer key={id} 
-                    name={name} age={age} />) 
+                trainers.map(({name, age, id}) => 
+                    <Trainer key={id} name={name} age={age} />) 
             }
         </>
     );

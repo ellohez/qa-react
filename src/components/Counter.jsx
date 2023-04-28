@@ -9,26 +9,24 @@ const Counter = () => {
     // UseState is a hook
     const [count, setCount] = useState(0); 
     const [postContent, setPostContent] = useState('');
-    let historyText = '';
     let lastValue = 0;
 
     const storeAndCalc = (btnValue) => {
+        lastValue = count;
         const newValue = count + btnValue;
-        historyText = `${postContent}
-                    \n ${count} ${(btnValue > 0 ? "+" : "")} ${btnValue} = ${lastValue}`;
-        setPostContent(historyText);    
         setCount(newValue);
-        lastValue = btnValue;
+        let historyText = `${postContent}
+                    ${lastValue} ${(btnValue > 0 ? "+" : "")} ${btnValue} = ${newValue}`;
+        setPostContent(historyText);    
     }   
     
     return (
-        <div>
+        <div className="row">
             <input value={count} />
-            <br />
-            <div className="row"> 
+            <div className=""> 
                 <button onClick={() => storeAndCalc(-5)}>-5</button>
                 <button onClick={() => storeAndCalc(-1)}>-1</button>
-                <button onClick={() => setCount(0)}>R</button>
+                <button onClick={() => {setCount(0); setPostContent('')}}>R</button>
                 {/* pass a function - don't call the function
                 otherwise the page will constantly call it, change state 
                 and reload...call it, change state and reload...*/}
