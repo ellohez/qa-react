@@ -28,7 +28,7 @@ const Converter = () => {
             <label>KMs: </label> 
             <input value={kms} onChange={changeKms} />
         </>
-    )
-}
+    );
+};
 
 export default Converter;
