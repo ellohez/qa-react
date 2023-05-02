@@ -1,9 +1,10 @@
 // import logo from './logo.svg';
 import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import React from 'react';
+import PropTypes from 'prop-types';
 
 // Import my components
-import React from 'react';
 // import Cat from './components/Cat';
 // import Hello from './components/Hello';
 // import BasicForm from './components/BasicForm';
@@ -15,9 +16,10 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import MyComponent from './components/MyComponent';
 
+
 // Component - function that must start with a Captial letter. 
 // Although doesn't have to use strict PascalCase.
-const App = () => {
+const App = props => {
   return (
     // Can wrap all HTML in empty tags (React fragment) <>, 
     // <div>, <main> or another parent 
@@ -64,6 +66,17 @@ const App = () => {
       </div>
     </div>
   );
+}
+
+App.defaultProps = {
+  headerProp: `This is the default heading`, 
+  contentProp: `This is the default content`
+}
+
+App.propTypes = {
+  headerProp: PropTypes.string,
+  contentProp: PropTypes.string,
+  numberProp: PropTypes.number
 }
 
 export default App;
